@@ -1,0 +1,84 @@
+
+.contenedor-card {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    gap: 1rem;
+    grid-auto-rows: 360px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.contenedor-card .card {
+    margin: 0px;
+}
+
+.contenedor_tarjetas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 360px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+.card_img {
+    max-height: 60%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */
+}
+
+.card:hover img {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.card-body {
+    padding: auto;
+}
+
+.btn-primary {
+    background-color: $color1;
+    border-color: $color3;
+}
+
+.carousel-control-prev-icon {
+    background-color: $color3;
+}
+
+.carousel-control-next-icon {
+    background-color:$color3;
+}

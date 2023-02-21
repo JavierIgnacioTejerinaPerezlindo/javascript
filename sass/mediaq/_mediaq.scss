@@ -1,0 +1,44 @@
+
+@media only screen and (min-width: 991px) {
+    .header {
+        &__logo {
+            width: 40%;
+        }
+
+        &__banner {
+            display: block;
+            width: 100%;
+        }
+
+        &__contenedorbanner {
+            height: auto;
+        }
+    }
+
+    .contenedor_tarjetas {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .contenedor_card {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .quienes {
+        grid-template-areas: " . ti ti ti ti ti ti li li . . . "
+            " . ti ti ti ti ti ti li li . . . "
+            " . te te te te te te if if if if . "
+            " . te te te te te te if if if if . ";
+    }
+
+    .header_quienes {
+        grid-template-areas: "b b b b b b b b b b b b"
+            ". . . l l l l l l . . ."
+            "ba ba ba ba ba ba bb bb bb bb bb bb"
+            "ba ba ba ba ba ba bb bb bb bb bb bb"
+            "n n n n n n n n n n n n";
+    }
+}

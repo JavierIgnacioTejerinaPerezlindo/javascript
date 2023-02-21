@@ -1,0 +1,349 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'GFS Didot', serif;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+
+}
+
+.header__barra {
+    background-color: lightslategray;
+}
+
+.header__barra__text {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.header__contenedorlogo {
+    width: 100%;
+    text-align: center;
+}
+
+.header__contenedorlogo__logo {
+    width: 80%;
+}
+
+.banner {
+    display: none;
+}
+
+.banner_index {
+    background-image: url("../img/banner_indexmobile.jpg");
+    background-size: cover;
+
+    height: 85vh;
+    width: auto;
+    background-position: center;
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+}
+
+.banner_mujeres {
+    background-image: url("../img/banner_mujermobile.jpg");
+    background-size: cover;
+
+    height: 85vh;
+    width: auto;
+    background-position: center;
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+}
+
+.banner_hombres {
+
+    background-image: url("../img/banner_hombremobile.jpg");
+    background-size: cover;
+
+    height: 85vh;
+    width: auto;
+    background-position: center;
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+}
+
+.banner_niños {
+    background-image: url("../img/banner_niñosmobile.jpg");
+    background-size: cover;
+
+    height: 85vh;
+    width: auto;
+    background-position: center;
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+}
+
+.banner_contactanos {
+    background-image: url("../img/banner_contactanosmobile.jpg");
+    background-size: cover;
+
+    height: 85vh;
+    width: auto;
+    background-position: center;
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+}
+
+main {
+    grid-area: main;
+}
+
+.contenedor-card {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    gap: 1rem;
+    grid-auto-rows: 360px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.contenedor-card .card {
+    margin: 0px;
+}
+
+.contenedor_tarjetas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 360px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card_img {
+    max-height: 60%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */
+}
+
+.card:hover img {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.card-body {
+    padding: auto;
+}
+
+.btn-primary {
+    background-color: lightslategray;
+}
+
+.carousel-control-prev-icon {
+    background-color: gray;
+}
+
+.carousel-control-next-icon {
+    background-color: gray;
+}
+
+footer {
+    margin-top: 30px;
+    grid-area: footer;
+    padding: 10px;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    inline-size: 50px;
+}
+
+.desarrollador {
+    margin-top: 20px;
+    text-align: end;
+    text-align: right;
+}
+footer h5{
+    font-size: small;
+}
+
+.grid_quienes {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f"
+
+}
+
+.header_quienes {
+    grid-area: h;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "b b b b b b b b b b b b"
+        ". . l l l l l l l l . ."
+        "ba ba ba ba ba ba ba ba ba ba ba ba"
+        "bb bb bb bb bb bb bb bb bb bb bb bb"
+        "n n n n n n n n n n n n";
+}
+
+.barra_sup {
+    grid-area: b;
+}
+
+.logo_quienes {
+    grid-area: l;
+    width: 100%;
+}
+
+.banner_quienes1 {
+    grid-area: ba;
+    width: 100%;
+}
+
+.banner_quienes2 {
+    grid-area: bb;
+    width: 100%;
+}
+
+nav {
+    grid-area: n;
+}
+
+.quienes {
+    grid-area: m;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: ". ti ti ti ti ti ti ti ti ti ti ."
+        ". . te te te te te te te te . ."
+        ". . . . . li li . . . . . "
+        "if if if if if if if if if if if if ";
+}
+
+.quienes_titulo {
+    grid-area: ti;
+}
+
+.quienes_texto {
+    grid-area: te;
+}
+
+.quienes_linkubicacion {
+    display: block;
+    grid-area: li;
+}
+
+.quienes_iframe {
+    grid-area: if;
+}
+
+.quienes_footer {
+    grid-area: f;
+}
+
+
+
+@media only screen and (min-width: 991px) {
+    .header__contenedorlogo__logo {
+        width: 40%;
+    }
+
+    .banner {
+        display: block;
+        width: 100%;
+    }
+
+    .banner_hombres {
+        height: auto;
+    }
+
+    .banner_index {
+        height: auto;
+    }
+
+    .banner_mujeres {
+        height: auto;
+    }
+
+    .banner_niños {
+        height: auto;
+    }
+
+    .banner_contactanos {
+        height: auto;
+    }
+
+    .contenedor_tarjetas {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .contenedor_card{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .quienes {
+        grid-template-areas: " . ti ti ti ti ti ti li li . . . "
+            " . ti ti ti ti ti ti li li . . . "
+            " . te te te te te te if if if if . "
+            " . te te te te te te if if if if . ";
+    }
+
+    .header_quienes {
+        grid-template-areas: "b b b b b b b b b b b b"
+            ". . . l l l l l l . . ."
+            "ba ba ba ba ba ba bb bb bb bb bb bb"
+            "ba ba ba ba ba ba bb bb bb bb bb bb"
+            "n n n n n n n n n n n n";
+    }
+}

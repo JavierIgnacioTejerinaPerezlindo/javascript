@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="tienda online ropa e indumentaria deportiva mujeres hombres y niños marca freya y marea">
+    <meta name="keywords"
+        content="indumentaria, ropa, mujer, hombre, niños, freya, marea, montecristo, cordoba, deportivo, deportiva, calza, top, remera, campera, pantalon, conjunto, urbano, short, musculosa, calidad, comprar, 2022, temporada">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/estilos.css">
+    <title>Cittadina Indumentaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__barra">
+            <h1 class="header__text">Indumentaria Mujeres, Hombres y Niños</h1>
+        </div>
+        <div class="header__contenedorlogo">
+            <img class="header__logo" src="./img/logo_tefi.jpg" alt="cittadina indumentaria">
+        </div>
+        <div class="header__contenedorbanner index">
+            <img class="header__banner" src="./img/banner_index.jpg">
+        </div>
+        <!--         barra de navegacion -->
+        <nav class="menu navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="barranav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./paginas/mujeres.html">Mujeres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./paginas/hombres.html">Hombres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./paginas/niños.html">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="./paginas/contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./paginas/quienes.html">Quienes
+                                somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--         primera vista a los articulos -->
+        <section id="contenedor_tarjetas">
+            <template id="card_articulos">
+                <article class="card">
+                    <div class="card_img">
+                        <img src="./img/remera_hombre.jpg" class="card-img-top"
+                            alt="remera deportiva hombre color rojo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$7499</h5>
+                        <p class="card-text">Remera deportiva Freya</p>
+                        <button href="#" class="btn btn-primary">Comprar</button>
+                    </div>
+                </article>
+            </template>
+        </section>
+        <!--         /* carrousel */ -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <article class="card">
+                        <div class="card_img">
+                            <img src="./img/calzasublimada.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$8499</h5>
+                            <p class="card-text">Calza Sublimada</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="card">
+                        <div class="card_img">
+                            <img src="./img/musculosa-mujer.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$4099</h5>
+                            <p class="card-text">Musculosa deportiva Mujer</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="card">
+                        <div class="card_img">
+                            <img src="./img/musculosa-azul.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$5499</h5>
+                            <p class="card-text">Musculosa Azul Freya hombres</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h4>Carrito de compras</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="elegidosHtml"></tbody>
+          <tfoot>
+            <tr id="pieCarroHtml">
+              <th scope="row" colspan="5">Muchas gracias por su compra</th>
+            </tr>
+          </tfoot>
+        </table>
+
+        <template id="tempPieCarroHtml">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    vaciar todo
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+        
+        <template id="tempCarritoHtml">
+          <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+          </tr>
+        </template>
+    </main>
+    <footer>
+        <section class="insta">
+            <img src="./img/instagram3.png" alt="">
+            <a href="">visita nuestro instagram</a>
+        </section>
+        <section class="face">
+            <img src="./img/face.png" alt="">
+            <a href="">visita nuestro facebook</a>
+        </section>
+        <section class="desarrollador">
+            <h5>Desarrollado por Javier Ignacio Tejerina Perezlindo</h5>
+        </section>
+
+    </footer>
+    <script src="./js/citadina.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+[
+{
+    "descripcion": "Remera deportiva Freya",
+    "precio": 7499,
+    "imagen": "./img/remera_hombre.jpg",
+    "id": 1
+},
+
+    {
+    "descripcion": "Pantalon de mujer algodon",
+    "precio": 7499,
+    "imagen": "./img/pantalon_algodon_mujer.jpg",
+    "id": 2
+},
+{
+    "descripcion": "Conjunto mujer verde",
+    "precio": 9499,
+    "imagen": "./img/conjunto_verde.jpg",
+    "id": 3
+},
+{
+    "descripcion": "Vestido Deportivo",
+    "precio": 8999,
+    "imagen": "./img/vestidodeportivo.jpg",
+    "id": 4
+},
+{
+    "descripcion": "Remera deportiva Mujer",
+    "precio": 6199,
+    "imagen": "./img/remeradeportiva-mujer.jpg",
+    "id": 5
+}
+]
+

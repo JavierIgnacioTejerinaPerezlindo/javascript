@@ -1,0 +1,63 @@
+
+.header {
+    &__barra {
+        background-color: $color1;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: $color2;
+        text-align: center;
+    }
+
+    &__contenedorlogo {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__logo {
+        width: 80%;
+    }
+
+    &__contenedorbanner {
+        background-size: cover;
+
+        height: 85vh;
+        width: auto;
+        background-position: center;
+        border-style: solid;
+        border-color: $color1;
+        border-width: 1px;
+    }
+
+    &__banner {
+        display: none;
+    }
+}
+
+
+.banner {
+    display: none;
+}
+
+.index {
+    background-image: url("../img/banner_indexmobile.jpg");
+}
+
+.mujeres {
+    background-image: url("../img/banner_mujermobile.jpg");
+}
+
+.hombres {
+
+    background-image: url("../img/banner_hombremobile.jpg");
+}
+
+.niños {
+    background-image: url("../img/banner_niñosmobile.jpg");
+}
+
+.contactanos {
+    background-image: url("../img/banner_contactanosmobile.jpg");
+}
+
